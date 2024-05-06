@@ -1,0 +1,188 @@
+// Define colors
+$brainflix-black: #323232;
+$brainflix-blue: #0095FF;
+$silver: #AFAFAF;
+$white: #FFFFFF;
+$brainflix-dark-black: #000000;
+$brainflix-dark-blue: #0065AD;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    src: url('../../assets/Font/AvenirNextLTPro-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('../../assets/Font/AvenirNextLTPro-Demi.otf') format('opentype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Avenir Next Regular';
+    src: url('../../assets/Font/AvenirNextLTPro-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+  
+  /* Define text styles */
+  $base-font-size: 13px; 
+
+/* Mobile styles (default) */
+.page-header,
+.section-header,
+.subheader,
+.label,
+.button {
+  font-family: 'Avenir Next Bold', sans-serif;
+  font-weight: 700;
+}
+
+.page-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .section-header {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  
+  .subheader {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  
+  .body-copy {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+
+.label,
+.button {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.mobile-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $brainflix-black; // Primary text color
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  
+  .search-icon,
+  .upload-icon {
+    margin-right: 0.625rem; // Add margin between icon and input/button text
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 0.625rem 1.875rem 0.625rem 2.5rem;
+    border: 1px solid $silver;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .user-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: $silver;
+    margin-left: 0.625rem;
+  }
+  
+  .upload-button {
+    width: 100%;
+    background-color: $brainflix-blue;
+    color: $white;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    position: relative;
+  }
+  
+  .upload-icon {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+    .page-header {
+        font-size: 33px;
+        line-height: 44px;
+      }
+    
+      .section-header {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    
+      .subheader {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    
+      .label,
+      .button {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+  }
+  
+  /* Desktop styles */
+  @media only screen and (min-width: 1280px) {
+    .page-header {
+        font-size: 33px;
+        line-height: 44px;
+      }
+    
+      .section-header {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    
+      .subheader {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    
+      .label,
+      .button {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+  }
+  
