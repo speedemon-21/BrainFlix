@@ -3,6 +3,8 @@ import userAvatarImg from "../../assets/Images/Mohan-muruge.jpg";
 import searchIcon from "../../assets/Icons/search.svg"; // Import search icon image
 import uploadIcon from "../../assets/Icons/upload.svg";
 import { Link } from "react-router-dom";
+import './Header.scss';
+
 
 const Header = () => {
   return (
@@ -23,6 +25,7 @@ const Header = () => {
           UPLOAD
         </button>
       </Link>
+
     </header>
   );
 };

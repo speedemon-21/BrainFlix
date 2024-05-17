@@ -1,0 +1,141 @@
+/* Mobile styles (default) */
+@import '../../styles/partials/responsive.scss';
+
+
+header{
+    width: 100%;
+  }
+  
+  .logo{
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  
+  .search-icon,
+  .upload-icon {
+    margin-right: 0.625rem;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 0.625rem 1.875rem 0.625rem 2.5rem;
+    border: 1px solid $silver;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .user-avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: $silver;
+    margin-left: 0.625rem;
+  }
+  
+  .upload-button {
+    width: 100%;
+    background-color: $brainflix-blue;
+    color: $white;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .upload-icon {
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+
+  /* Tablet styles */
+  @media only screen and (min-width: 768px) {
+ 
+    //header
+    header {
+      display: flex;
+      align-items: center;
+     justify-content:last baseline; /* Align items evenly along the main axis */
+      //padding: 10px;
+    }
+    
+    
+    
+    .search-bar {
+      display: flex;
+      //align-items:center;
+      //flex: 1; /* Take remaining space */
+      margin-bottom: 1.25rem;
+      margin-left: 15rem;
+      position: relative;
+      width: 20rem;
+    }
+    
+    
+    input[type="text"] {
+      flex: 1;
+      //padding: 0.625rem 1.875rem 0.625rem 2.5rem;
+      border: 1px solid $silver;
+      border-radius: 0.3125rem;
+      font-size: 0.8125rem;
+      line-height: 1.125rem;
+    }
+    
+    // .search-icon {
+    //   position: absolute;
+    //   left: 0.625rem;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
+    
+    .user-avatar {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background-color: $silver;
+      margin-left: 0.625rem;
+    }
+    
+    .upload-button {
+     // max-width: 100%;
+      background-color: $brainflix-blue;
+      color: $white;
+      border: none;
+      border-radius: 0.3125rem;
+      //padding: 0.625rem 2.5rem;
+      font-size: 0.875rem;
+     // line-height: 1.375rem;
+      //position:relative;
+     
+      margin: 0.5rem 0rem 1rem 0.3rem;
+    
+    }
+    
+    .upload-icon {
+      position: absolute;
+      left: 0.625rem;
+      top: 50%;
+      
+    }
+
+}

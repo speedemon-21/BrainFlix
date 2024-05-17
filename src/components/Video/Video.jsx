@@ -1,5 +1,6 @@
 import viewsIcon from "../../assets/Icons/views.svg"; // Import views icon
 import likesIcon from "../../assets/Icons/likes.svg";
+import './Video.scss';
 
 const formatDate = (timestamp) => {
     const date = new Date(timestamp);

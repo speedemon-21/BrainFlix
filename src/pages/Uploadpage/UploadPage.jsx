@@ -1,4 +1,5 @@
-import "../../styles/partials/responsive.scss";
+//import "../../styles/partials/responsive.scss";
+import "./UploadPage.scss";
 
 //import React, { useState } from "react";
 import UploadVideo from "../../components/UploadVideo/UploadVideo";

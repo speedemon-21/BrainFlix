@@ -1,5 +1,6 @@
 import userAvatarImg from "../../assets/Images/Mohan-muruge.jpg";
 import commentIcon from "../../assets/Icons/add_comment.svg";
+import "./CommentsSection.scss";
 
 const CommentsSection = (props) => {
     const { selectedVideoDetails } = props;

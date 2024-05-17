@@ -1,0 +1,73 @@
+/* Mobile styles (default) */
+@import '../../styles/partials/responsive.scss';
+
+
+
+.next-video {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+a{
+    text-decoration: none;
+}
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      max-width: 20%;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .video-info {
+      flex-grow: 1;
+      padding: 1rem;
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+  
+      .info-text {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        
+  
+        h3 {
+          font-family: "Avenir Next Bold", sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 8px;
+          text-decoration: none;
+         
+        }
+  
+        p {
+          font-family: "Avenir Next Regular", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          color: $silver;
+        }
+      }
+    }
+  }
+
+  /* Desktop styles */
+@media only screen and (min-width: 1280px) {
+
+  .next-video-section {
+    width: 50%; 
+    margin-top: 0; 
+    margin-left: auto; 
+    //display: flex;
+    text-decoration: none;
+  }
+  
+}
