@@ -4,9 +4,9 @@ import './NextVideoSection.scss';
 
 const NextVideoSection = ({ nextVideos }) => {
     return (
-        <div className="video-page-container">
+       
       <div className="next-video-section">
-        <h2>Next Video</h2>
+        <h2>NEXT VIDEOS</h2>
         <div className="next-videos">
           {nextVideos.length > 0 &&
           nextVideos.map((video) => (
@@ -26,7 +26,7 @@ const NextVideoSection = ({ nextVideos }) => {
           ))}
         </div>
       </div>
-      </div>
+
     );
   };
   

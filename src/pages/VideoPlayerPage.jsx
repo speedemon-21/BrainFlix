@@ -7,20 +7,25 @@ import Video from "../components/Video/Video";
 import CommentsSection from "../components/CommentsSection/CommentsSection";
 import NextVideoSection from "../components/NextVideoSection/NextVideoSection";
 import axios from "axios";
+import "./VideoPlayerPage.scss"
+import CommentsList from "../components/CommentsList/CommentsList";
 
 const VideoPlayerPage = () => {
   const [selectedVideo, setSelectedVideo] = useState({});
   const [nextVideos, setNextVideos] = useState([]);
   const { id } = useParams();
   const selectedVideoId = id || "84e96018-4022-434e-80bf-000ce4cd12b8";
-  const baseUrl = "https://unit-3-project-api-0a5620414506.herokuapp.com/";
+  //const baseUrl = "https://unit-3-project-api-0a5620414506.herokuapp.com/";
+  const baseUrl = "http://localhost:5050/";
 
   useEffect(() => {
     const getVideos = async () => {
       try {
         const [nextVideosResponse, selectedVideoResponse] = await Promise.all([
-          axios.get(baseUrl + `videos?api_key=cc3d8f7e-5a6f-4cd0-ae88-f6745ccd6855`),
-          axios.get(baseUrl + `videos/${selectedVideoId}?api_key=cc3d8f7e-5a6f-4cd0-ae88-f6745ccd6855`)
+          //axios.get(baseUrl + `videos?api_key=cc3d8f7e-5a6f-4cd0-ae88-f6745ccd6855`),
+          //axios.get(baseUrl + `videos/${selectedVideoId}?api_key=cc3d8f7e-5a6f-4cd0-ae88-f6745ccd6855`)
+          axios.get(baseUrl + `videos`),
+          axios.get(baseUrl + `videos/${selectedVideoId}`)
         ]);
 
         // Filter out the selected video from the list of next videos
@@ -37,9 +42,12 @@ const VideoPlayerPage = () => {
 
   return (
     <div>
-      <Video selectedVideo={selectedVideo} />
+      <Video selectedVideo={selectedVideo} />  
+      <div className = "magic-container">
+     <div>
       <CommentsSection selectedVideoDetails={selectedVideo} />
-      <NextVideoSection nextVideos={nextVideos} />
+      <CommentsList selectedVideoDetails={selectedVideo} /></div>
+      <NextVideoSection nextVideos={nextVideos} /></div>
     </div>
   );
 };

@@ -2,16 +2,20 @@
 @import '../../styles/partials/responsive.scss';
 
 
+.next-video-section {
+
+    h2{
+        color: $silver;
+        font-size: 1.25rem;
+    }
+  }
 
 .next-video {
     display: flex;
-    gap: 16px;
     align-items: center;
-    cursor: pointer;
     transition: transform 0.3s ease;
-a{
-    text-decoration: none;
-}
+
+    
   
     &:hover {
       transform: scale(1.05);
@@ -37,8 +41,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-decoration: none;
-        
+      
   
         h3 {
           font-family: "Avenir Next Bold", sans-serif;
@@ -46,13 +49,14 @@ a{
           line-height: 24px;
           margin-bottom: 8px;
           text-decoration: none;
+          color: $brainflix-black;
          
         }
   
         p {
           font-family: "Avenir Next Regular", sans-serif;
-          font-size: 14px;
-          line-height: 20px;
+          font-size: 1rem;
+          line-height: 1rem;
           color: $silver;
         }
       }
@@ -63,11 +67,12 @@ a{
 @media only screen and (min-width: 1280px) {
 
   .next-video-section {
-    width: 50%; 
+    width: 40%; 
     margin-top: 0; 
-    margin-left: auto; 
+    //margin-left: auto; 
     //display: flex;
     text-decoration: none;
+  
   }
   
 }

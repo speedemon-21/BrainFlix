@@ -17,11 +17,12 @@ const CommentsSection = (props) => {
       };
 
   return (
-    <div class="commments-section">
-    <div className="comments-section">
+ 
+   
        <div className="comments-section">
-        <div calssName="comments-container">
+        <div className="comments-container">
           <p className="comment-count">{numberOfComments} Comments</p>
+          <div className="comments-plus">
           <div className="add-comment">
             <img
               className="save-avatar"
@@ -30,7 +31,7 @@ const CommentsSection = (props) => {
             />
             <div className="comment-input">
               <p className="join-conversation">JOIN THE CONVERSATION</p>
-              <div class="form-group">
+              <div className="form-group">
                 <input
                   id="comment"
                   type="text"
@@ -39,8 +40,8 @@ const CommentsSection = (props) => {
               </div>
             </div>
           </div>
-          <div>
-            {" "}
+
+          <div className="button-container">
             <button className="comment-button">
               <img
                 className="comment-icon"
@@ -50,30 +51,11 @@ const CommentsSection = (props) => {
               COMMENT
             </button>
           </div>
-        </div>
-
-        <div className="comments-list">
-          {selectedVideoDetails.comments &&
-          selectedVideoDetails.comments.map((comment, index) => (
-            <div key={comment.id} className="comment">
-              <hr className="divider" />
-              <div className="first-row">
-                <div
-                  className="avatar"
-                  style={{ backgroundColor: "grey" }}
-                ></div>
-                <div className="info">
-                  <p className="name">{comment.name}</p>
-                  <p className="time">{formatDate(comment.timestamp)}</p>
-                </div>
-              </div>
-              <p className="comment-text">{comment.comment}</p>
-            </div>
-          ))}
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+
+ 
   );
 };
 

@@ -76,7 +76,7 @@ a{
   //padding: 20px;
 }
 
-.divider {
+.divider, .divider_1 {
   margin-top: 16px;
   margin-bottom: 16px;
   border: none;
@@ -107,17 +107,10 @@ a{
 
 /* Desktop styles */
 @media only screen and (min-width: 1280px) {
-  // .video-page-container {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  
-  // .title,
-  // .description,
-  // .next-video-section {
-  //   width: 100%;
-  // }
+  .magic-container{
+    display: flex;
+} }
   
 
 
-}
+

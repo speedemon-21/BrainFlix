@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/" element={<VideoPlayerPage />} />
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/video/:id" element={<VideoPlayerPage />} />
+ 
         </Routes>
       
       </div>

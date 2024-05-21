@@ -5,9 +5,8 @@ import "./UploadPage.scss";
 import UploadVideo from "../../components/UploadVideo/UploadVideo";
 
 
-
 const UploadPage = () => {
-  
+ 
 
   return (
     <>

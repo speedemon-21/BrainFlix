@@ -41,50 +41,49 @@
    line-height: 32px;
    color: $brainflix-black;
  }
- 
- 
- 
- .description {
-  // margin: 16px;
-  display: inline-block;
-   font-size: 1rem;
-   color: $silver;
-   img {
-     margin: 0 1rem 0 10rem;
-   }
- }
- 
 
- /* Tablet styles */
- @media only screen and (min-width: 768px) {
  
-    .description {
-        display: flex;
-       // align-items: center;
-        //justify-content: flex-start;
-        margin-top: 1rem;
-    
-        .subheader {
-          margin-right: 2rem;
-        }
-    
-        span {
-          display: flex;
-          //align-items: center;
-          //margin-right: 6rem;
-        }
-    
-        .video-description {
-          font-family: "Avenir Next Regular", sans-serif;
-          font-size: 14px;
-          line-height: 20px;
-          color: $silver;
-          margin-top: 16px;
-        }
-      }
-    }    
+//  .description {
+//   // margin: 16px;
+//   display: inline-block;
+//    font-size: 1rem;
+
+//  }
+.description {
+    display: flex;
+   // align-items: center;
+    //justify-content: flex-start;
+    margin-top: 1rem;
+    color: $silver;
+    img {
+      margin: 0 1rem;
+    }
+    .subheader {
+      margin-right: 2rem;
+    }
+
+    span {
+      display: flex;
+      //align-items: center;
+      //margin-right: 6rem;
+    }
+
+    .video-description {
+      font-family: "Avenir Next Regular", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: $silver;
+      margin-top: 16px;
+    }
+  }
+ 
+  .add-comment{
+    display: inline-block;
+  }
 
 
+ 
+   
     /* Tablet styles */
 @media only screen and (min-width: 768px) {
 
@@ -126,23 +125,13 @@
     color: $brainflix-black;
   }
   
-  .divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border: none;
-    height: 1px;
-    background-color: $mercury;
-    width: 100%;
+  .divider_1 {
+ display: none;
   }
   
-  .description {
-    margin: 16px;
-    font-size: 1rem;
-    color: $silver;
-    img {
-      margin: 0 1rem 0 10rem;
-    }
-  }
+
+
+
   
   .subheader {
     font-weight: 400;
@@ -190,20 +179,29 @@
       }
     }
   }
-}
 
-
-/* Desktop styles */
-@media only screen and (min-width: 1280px) {
-
-  .video-page-section {
-    width: 50%;
-    //display: flex;
-    flex: 1;
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
   
-  .comments-section  {
-    width: 50%; 
-    //display: flex;
+  .description > div {
+    display: flex;
+  //  align-items: center;
   }
+  
+  .description span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description img {
+    margin-right: 0.25rem; 
+  }
+  
+
+
+
 }
